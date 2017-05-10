@@ -1,0 +1,54 @@
+How did viewing a diff between two versions of a file help you see the bug that
+was introduced?
+
+	The diff size between 2 files is usually relatively small compared to the complete file size.
+	So the diff toolsaves me a lot of time, because I only need to compare the part that are    Fill in your answer here
+	actually different. In addition, depending on the diff tool, inserts, removes and changes
+	are highlighted to further ease analysis of the differences. This enormously speeds up	
+	the process of spotting the bug.	
+
+How could having easy access to the entire history of a file make you a more
+efficient programmer in the long term?
+
+    I can learn from mistakes I made in the past, by reviewing how a bug was introduced and
+	fixed. It also allows me to easily rewind the version of a file to a state in which it
+	was fully working.
+
+What do you think are the pros and cons of manually choosing when to create a
+commit, like you do in Git, vs having versions automatically saved, like Google
+docs does?
+
+    Pro: I can commit each logical change.
+	Pro: I can commit only when I have a working version (and not broken versions in between).
+	Pro: I can document the change with some meaningful short desrciption.
+	Con: I might forget to commit sometimes.
+
+Why do you think some version control systems, like Git, allow saving multiple
+files in one commit, while others, like Google Docs, treat each file separately?
+
+    Because one logical change may affect several files (e.g., the one in which a function
+	declaration has changed, and another one in which the call to this function has changed
+	accordingly). Saving them all at once allows to associate these logically related
+	changes with each other.
+
+How can you use the commands git log and git diff to view the history of files?
+
+    First navigate to the git repository in Git Cmd or Git Bash.
+    Then run the log command 'git log --stat' or 'git log'.
+	(Scroll by pressing down arrow, exit git log by pressing 'q'.)
+	Once the relevant commits have been identified note their IDs.
+	(Here the first 4 letters of the commit ID are sufficient.)
+	Then run the diff command 'git diff <commit_id_1> <commit_id_2>'
+    This shows (with colors highlighted) the inserts and deletions.	
+
+How might using version control make you more confident to make changes that
+could break something?
+
+    If I make a change that breaks something, it can be identified using version control.
+	The change can then be reviewed and revised or reverted.
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+    I want to try using Git to handle the version control of a Python project I want to develop.
+	The topic is not yet clear, but I just made the Python course at Udacity, so I want to 
+	practice... ;-)
